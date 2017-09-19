@@ -7,7 +7,7 @@ const webpack = require('webpack');
 
 module.exports = {
     entry : {
-        js : './app/app.js',
+        js : './src/index.js',
     },
     devtool: 'inline-source-map',
     devServer: {
@@ -34,7 +34,7 @@ module.exports = {
                     fallback: 'style-loader',
                     use:['css-loader', 'sass-loader']
                 })
-            }
+            },
         ]
     },
     plugins : [
